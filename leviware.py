@@ -16,7 +16,7 @@ import webbrowser
 import sqlite3
 import json
 
-encode_contact_email = "lol@gmail.com""
+encode_contact_email = "lol@gmail.com"
 contact_email = base64.b64decode(encode_contact_email.encode()).decode()
 notification_endpoint = "https://webhookgoeshere.com"
 
